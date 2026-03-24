@@ -75,10 +75,27 @@ export default function LandingPage() {
   const [loaded,   setLoaded]   = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setLoaded(true),  200);
-    const t2 = setTimeout(() => setIntroOut(true), 2400);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
-  }, []);
+  const hasSeenIntro = sessionStorage.getItem("intro_seen");
+
+  if (hasSeenIntro) {
+    // Skip loader
+    setLoaded(true);
+    setIntroOut(true);
+    return;
+  }
+
+  // First time → run loader
+  const t1 = setTimeout(() => setLoaded(true), 200);
+  const t2 = setTimeout(() => {
+    setIntroOut(true);
+    sessionStorage.setItem("intro_seen", "true"); // mark as seen
+  }, 2400);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+  };
+}, []);
 
   /* Scroll progress width */
   const progressWidth =
@@ -102,7 +119,7 @@ export default function LandingPage() {
       <IntroLoader loaded={loaded} out={introOut} />
 
       {/* Page sections */}
-      <Navbar />
+      
       <Hero introOut={introOut} />
       <Marquee />
       <Philosophy />

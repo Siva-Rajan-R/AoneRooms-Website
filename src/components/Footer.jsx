@@ -50,9 +50,9 @@ export default function Footer() {
 
               {/* CTA button */}
               <CallSelector
-  numbers={["9677760535", "9600726535"]}
-  label="Call to Check Availability"
-/>
+                numbers={["9677760535", "9600726535"]}
+                label="Call to Check Availability"
+              />
 
             </div>
           </div>

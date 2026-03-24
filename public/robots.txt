@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.aonerooms.com/sitemap.xml
+Sitemap: https://www.aonerooms.in/sitemap.xml

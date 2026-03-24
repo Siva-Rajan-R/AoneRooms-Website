@@ -33,7 +33,7 @@ export default function Navbar() {
         <div
           className={`max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-14 transition-all duration-700 ${
             scrolled && !menuOpen
-              ? "bg-white/50 backdrop-blur-3xl border border-[#895737]/10 rounded-2xl mx-4 sm:mx-8 shadow-[0_8px_32px_rgba(94,48,35,0.12)]"
+              ? "bg-white/50 backdrop-blur-3xl rounded-2xl mx-4 sm:mx-8 shadow-[0_8px_32px_rgba(94,48,35,0.12)]"
               : "bg-transparent"
           }`}
         >
