@@ -11,13 +11,21 @@ import FAQ          from "./components/FAQ";
 import Footer       from "./components/Footer";
 
 /* ── Marquee strip ── */
+// const MARQUEE_ITEMS = [
+//   "Private Luxury Stay", "❧",
+//   "Boutique Hotel in Madurai", "❧",
+//   "Two Exclusive Suites", "❧",
+//   "Peaceful Retreat Experience", "❧",
+//   "Perungudi · Madurai", "❧",
+//   "Curated Guest Experience", "❧",
+// ];
 const MARQUEE_ITEMS = [
-  "Private Luxury Stay", "❧",
-  "Boutique Hotel in Madurai", "❧",
-  "Two Exclusive Suites", "❧",
-  "Peaceful Retreat Experience", "❧",
-  "Perungudi · Madurai", "❧",
-  "Curated Guest Experience", "❧",
+  "Rooms Near Perungudi Madurai International Airport", "❧", 
+  "Rooms Stay in Perungudi", "❧",
+  "Two Exclusive Boutique Rooms", "❧",
+  "Peaceful Airport Retreat", "❧",               
+  "AoneRooms · Perungudi· Madurai", "❧",
+  "Private & Curated Experience", "❧",
 ];
 
 function Marquee() {
